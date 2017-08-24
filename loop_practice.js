@@ -1,12 +1,13 @@
-function randomNumber(supply){
-  var randomizer = Math.floor( Math.random() * supply ) + 1;
+function getRandom(lucky){
+  var randomizer = Math.floor(Math.random() * lucky) + 1;
   return randomizer;
 }
 
-var timeLeft = 0;
+var counter = 0;
+var putNum = prompt('Enter a number : ');
 
-while (timeLeft < 10){
-  var getRandom = randomNumber(10);
-  document.write(getRandom + ' ');
-  timeLeft += 1;
+while (counter < 10){
+  var rand = getRandom(putNum);
+  document.write(rand + ' -- ')
+  counter += 1;
 }
