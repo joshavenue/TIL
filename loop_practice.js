@@ -5,9 +5,10 @@ function getRandom(lucky){
 
 var counter = 0;
 var putNum = prompt('Enter a number : ');
+var putCounter = prompt('How many numbers you need? ')
 
-while (counter < 10){
+while (counter < putCounter){
   var rand = getRandom(putNum);
-  document.write(rand + ' -- ')
+  document.write(rand + ' ')
   counter += 1;
 }
