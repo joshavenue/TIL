@@ -14,3 +14,17 @@ switch (moonPhase){
     console.log('invalid moon phase');
     break;
                  }
+
+
+//this is the same with below //
+var moonPhase = 'full'
+
+if(moonPhase === 'full'){
+  console.log('Howll');
+}else if(moonPhase === 'mostly full'){
+  console.log('Arm are getting hairy');
+}else if(moonPhase === 'mostly new'){
+  console.log('back on two feet');
+}else{
+  console.log('invalid moon phase');
+}
